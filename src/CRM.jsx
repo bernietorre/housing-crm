@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
-import { Card, CardContent } from "@/components/ui/card";
-import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "@/components/ui/table";
-import { Label } from "@/components/ui/label";
+import { Input } from "./components/ui/input";
+import { Button } from "./components/ui/button";
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "./components/ui/select";
+import { Card, CardContent } from "./components/ui/card";
+import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "./components/ui/table";
+import { Label } from "./components/ui/label";
 
-const airtableBaseId = "TU_BASE_ID"; // reemplazar con tu base ID
+// Sustituye estos valores antes de compilar
+const airtableBaseId = "appJpYpdHFjzq2gxT";
 const airtableTableName = "Avalúos";
-const airtableToken = "Bearer TU_TOKEN"; // reemplazar con tu token (empieza con pat...)
+const airtableToken = "Bearer TU_TOKEN_AQUI";
 
 export default function CRM() {
   const [avalúos, setAvalúos] = useState([]);
